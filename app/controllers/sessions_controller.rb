@@ -14,4 +14,9 @@ class SessionsController < ApplicationController
 			render 'new'
 		end
 	end
+
+	def destroy
+		session[:user_id] = @current_user = nil
+		redirect_to root_url
+	end
 end
