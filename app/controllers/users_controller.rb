@@ -15,6 +15,7 @@ class UsersController < ApplicationController
 			session[:user_id] = @user.id
 			redirect_to root_path
 		else
+			@errors = @user.errors.full_messages
 			render 'new'
 		end
 
