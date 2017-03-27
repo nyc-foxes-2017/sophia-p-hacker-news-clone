@@ -61,3 +61,5 @@ View all comments by a user	GET	/users/:id/comments
 Release 2 : Views
 
 Implement all the views. Don't worry about AJAX at first.
+
+![Image of schema](/app/assets/images/schema.png)
